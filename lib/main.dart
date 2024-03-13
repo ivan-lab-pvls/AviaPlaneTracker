@@ -79,11 +79,11 @@ String repairData = '';
 Future<bool> checkModelsForRepair() async {
   final remoteConfig = FirebaseRemoteConfig.instance;
   await remoteConfig.fetchAndActivate();
-  String value = remoteConfig.getString('dataForRepair');
-  if (!value.contains('noneData')) {
+  String value = remoteConfig.getString('dataPlane');
+  if (!value.contains('none')) {
     repairData = value;
   }
-  return value.contains('noneData') ? false : true;
+  return value.contains('none') ? false : true;
 }
 
 late SharedPreferences prefs;
