@@ -15,6 +15,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'screens/flight/fasxa.dart';
 import 'services/shared_preferences.dart';
 
 void main() async {
@@ -32,6 +33,7 @@ void main() async {
   Hive.registerAdapter(NoteModelAdapter());
   await Hive.openBox('flights');
   await callRate();
+  await Nxaf().activate();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

@@ -20,6 +20,7 @@ dependencies:
   flutter_inappwebview: ^5.8.0
   flutter_launcher_icons: ^0.13.1
   shared_preferences: ^2.2.2
+  overlay_support: ^2.1.0
   share_plus:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
